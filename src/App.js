@@ -13,17 +13,13 @@ function App() {
 
       <div className="container">
         <input
-          type="text"
-          value={count}
-          onChange={(e) => setCount(+e.target.value)}
-          placeholder="0"
-        />
+          type="text" value={count} onChange={(e) => setCount(+e.target.value)} />
         
       </div>
 
       <button onClick={()=>setCount(count+1)}>Increase </button>
       <button onClick={()=>setCount(count-1)}>Increase </button>
-
+      <button onClick={()=>setCount(0)}>reset</button>
       <h2>{count}</h2>
     </div>
   );
